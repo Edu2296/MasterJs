@@ -23,7 +23,22 @@ document.write("<ul>");
 /*for(var i = 0; i < lenguajes.length; i++){
     document.write("<li>"+lenguajes[i]+"</li>");
 }*/
+//recorrer un array
+
 lenguajes.forEach((elemento,indice)=>{
     document.write("<li>"+indice+" - "+elemento+"</li>");
 })
 document.write("</ul>");
+
+//busquedas
+
+/*var busqueda= lenguajes.find(function(lenguajes){
+return lenguajes=="php7"
+});
+*/
+var precios=[10,20,50,80,12]
+//compara  cuales son mayores que hay dentro del array
+var busqueda= precios.some(precios=> precios>="20");
+
+
+console.log(busqueda)
